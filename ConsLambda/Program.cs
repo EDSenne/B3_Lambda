@@ -8,9 +8,11 @@ namespace ConsLambda
 {
     class Program
     {
+        delegate double noparams();
         static void Main(string[] args)
         {
-            
+            noparams taxRate = () => 33.5;
+            Console.WriteLine($"Taxrate: {taxRate()}%");
 
             Console.ReadKey();
         }
