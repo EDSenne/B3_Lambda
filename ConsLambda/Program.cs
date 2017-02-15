@@ -8,9 +8,11 @@ namespace ConsLambda
 {
     class Program
     {
+        delegate int lambda(int input);
         static void Main(string[] args)
         {
-            
+            lambda addOne = delegate (int x) { return x + 1; };
+            Console.WriteLine(addOne(1));
 
             Console.ReadKey();
         }
