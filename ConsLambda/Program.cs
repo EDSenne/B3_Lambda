@@ -8,11 +8,11 @@ namespace ConsLambda
 {
     class Program
     {
+        delegate long multi(int x, int y, int z);
         static void Main(string[] args)
         {
-            List<int> integers = new List<int> { 12, 16, 17, 28 };
-            int oddLocation = integers.FindIndex(i => i % 2 != 0);
-            Console.WriteLine($"Odd number found on position {oddLocation}");   
+            multi multiply = (x, y, z) => x * y * z;
+            Console.WriteLine(multiply(2,3,4));    // Outputs 24
             Console.ReadKey();
         }
     }
