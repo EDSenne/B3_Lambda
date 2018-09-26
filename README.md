@@ -1,7 +1,7 @@
 > Howest
 > 
-> Bachelor Toegepaste Informatica
+> HBO5 Informatica Programmeren
 > 
-> S4 .Net Technology
+> B3 Programmeren 4
 
 Lambda expressions 
